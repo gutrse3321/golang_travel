@@ -5,6 +5,36 @@ import (
 	"math"
 )
 
+type Monkey struct {
+	name   string
+	lover  string
+	status *Status
+}
+
+type Status struct {
+	hobby1, hobby2, hobby3, hobby4, hobby5 string
+}
+
+func (m *Monkey) getThis() {
+	monkey := &Monkey{
+		name: "程序员",
+		status: &Status{
+			hobby1: "格子衫",
+			hobby2: "油头",
+			hobby3: "人字拖",
+			hobby4: "MEVIUS",
+			hobby5: "改不完的BUG",
+		},
+		lover: "纸片人",
+	}
+
+	if monkey.lover != "纸片人" {
+		fmt.Println("这一定是个假的程序员")
+	} else {
+		fmt.Println("okay,thanks for your attention")
+	}
+}
+
 type geometry interface {
 	area() float32
 	perim() float32

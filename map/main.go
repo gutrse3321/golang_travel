@@ -30,6 +30,30 @@ func main() {
 	// 编译映射不是有序的，每次遍历返回的键值对都是随机的
 	//console: key: goku value: 9001
 	//console: key: gohan value: 2044
+
+	fmt.Println(lengthOfNonRepeatingSubStr("abcabcbb"))
+	fmt.Println(lengthOfNonRepeatingSubStr("bbbbb"))
+	fmt.Println(lengthOfNonRepeatingSubStr("aswwwwke"))
+	fmt.Println(lengthOfNonRepeatingSubStr(""))
+	fmt.Println(lengthOfNonRepeatingSubStr("a"))
+	fmt.Println(lengthOfNonRepeatingSubStr("abcdefg"))
+}
+
+func lengthOfNonRepeatingSubStr(s string) int {
+	lastOccurred := make(map[byte]int)
+	start := 0
+	maxLength := 0
+	for i, ch := range []byte(s) {
+		lastI, ok := lastOccurred[ch]
+		if ok && lastI >= start {
+			start = lastI + 1
+		}
+		if i-start+1 > maxLength {
+			maxLength = i - start + 1
+		}
+		lastOccurred[ch] = i
+	}
+	return maxLength
 }
 
 func firstMap() {

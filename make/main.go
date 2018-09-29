@@ -54,6 +54,7 @@ func main() {
 func getMore() {
 	scores := make([]int, 0, 5)
 
+	// cap 切片的向后容量
 	c := cap(scores)
 
 	fmt.Println("this c:", c)

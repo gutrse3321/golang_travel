@@ -41,6 +41,8 @@ func main() {
 	nextNumber1 := getSquence()
 	fmt.Println(nextNumber1())
 	fmt.Println(nextNumber1())
+
+	deferFuc()
 }
 
 // 函数返回两个数的最大值
@@ -77,4 +79,25 @@ func getSquence() func() int {
 		i += 1
 		return i
 	}
+}
+
+
+// defer使用
+// 类似java、C#的finally
+// defer file.Close() 关闭文件流
+// defer. mu.Unlock() 解锁加锁资源
+// defer printFooter() 打印最终报告
+// defer disconnect() 关闭数据库
+func deferFuc() {
+	fmt.Println("defer start")
+	// 将会在函数最后执行，
+	// defer start
+	// defer end
+	// is defer
+	defer waitDefer()
+	fmt.Println("defer end")
+}
+
+func waitDefer() {
+	fmt.Println("is defer")
 }
