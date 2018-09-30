@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbce68ba-3b58-4e7c-843f-484f472c45e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/login.gtpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/orm.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/less1.go" beforeDir="false" afterPath="$PROJECT_DIR$/web/less1.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,70 +21,78 @@
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.73" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="go" value="13" />
-          <entry key="gtpl" value="1" />
+          <entry key="go" value="24" />
+          <entry key="gtpl" value="2" />
+          <entry key="html" value="1" />
+          <entry key="lrc" value="1" />
+          <entry key="png" value="1" />
+          <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="13" />
-          <entry key="Go template" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Go" value="24" />
+          <entry key="Go template" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="1" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="10" />
-          <entry key="go" value="2645" />
-          <entry key="gtpl" value="133" />
+          <entry key="go" value="6976" />
+          <entry key="gtpl" value="396" />
+          <entry key="lrc" value="1" />
+          <entry key="sql" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="2645" />
-          <entry key="Go template" value="133" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Go" value="6976" />
+          <entry key="Go template" value="396" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="SQL" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
         <counts>
-          <entry key=".println" value="3" />
+          <entry key=".println" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login.gtpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/less1.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/goroutine_channel/goroutine_1.go">
+        <entry file="file://$PROJECT_DIR$/database/orm.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="11" column="56" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="71">
+              <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+              <folding>
+                <element signature="e#14#103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="8" selection-end-column="12" />
+              <folding>
+                <element signature="e#14#83#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,6 +102,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Go File" />
       </list>
     </option>
@@ -114,7 +123,14 @@
         <option value="$PROJECT_DIR$/goroutine_channel/channles.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/web/form/login.gtpl" />
+        <option value="$PROJECT_DIR$/web/login.gtpl" />
+        <option value="$PROJECT_DIR$/web/upload.html" />
+        <option value="$PROJECT_DIR$/web/upload.gtpl" />
         <option value="$PROJECT_DIR$/web/less1.go" />
+        <option value="$USER_HOME$/Desktop/go.sql" />
+        <option value="H:/CloudMusic/MusicCache/サリー - con~痕~.lrc" />
+        <option value="$PROJECT_DIR$/database/main.go" />
+        <option value="$PROJECT_DIR$/database/orm.go" />
       </list>
     </option>
   </component>
@@ -125,16 +141,17 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1328" />
-    <option name="y" value="-104" />
-    <option name="width" value="1154" />
-    <option name="height" value="778" />
+    <option name="x" value="-1662" />
+    <option name="y" value="-183" />
+    <option name="width" value="1302" />
+    <option name="height" value="850" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,22 +162,17 @@
             <path>
               <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
               <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="goroutine_channel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -183,22 +195,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build less1.go">
+  <component name="RunManager" selected="Go Build.go build orm.go">
     <configuration name="go build channles.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Golang" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/goroutine_channel/channles.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build function.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Golang" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/function/function.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -220,29 +223,38 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build time.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Golang" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/time/time.go" />
+      <filePath value="$PROJECT_DIR$/database/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build orm.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Golang" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/database/orm.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build function.go" />
-      <item itemvalue="Go Build.go build time.go" />
       <item itemvalue="Go Build.go build goroutine_1.go" />
       <item itemvalue="Go Build.go build channles.go" />
       <item itemvalue="Go Build.go build less1.go" />
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build orm.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build orm.go" />
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build less1.go" />
         <item itemvalue="Go Build.go build channles.go" />
         <item itemvalue="Go Build.go build goroutine_1.go" />
-        <item itemvalue="Go Build.go build time.go" />
-        <item itemvalue="Go Build.go build function.go" />
       </list>
     </recent_temporary>
   </component>
@@ -256,16 +268,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1328" y="-104" width="1154" height="778" extended-state="0" />
+    <frame x="-1662" y="-183" width="1302" height="850" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21023767" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1884058" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3919129" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39813375" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27132866" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3972028" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3281493" />
@@ -361,24 +373,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.gtpl">
+    <entry file="file://$PROJECT_DIR$/goroutine_channel/goroutine_1.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="45" />
+          <caret line="11" column="56" selection-start-line="9" selection-start-column="3" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.gtpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/go/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="288" column="5" selection-start-line="288" selection-start-column="5" selection-end-line="288" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/go/src/strconv/itoa.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/upload.gtpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/go/src/net/http/request.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="1267" column="18" selection-start-line="1267" selection-start-column="18" selection-end-line="1267" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testbg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/go.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/go/src/database/sql/sql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="656" column="5" selection-start-line="656" selection-start-column="5" selection-end-line="656" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://H:/CloudMusic/MusicCache/サリー - con~痕~.lrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/less1.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="-2">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#14#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goroutine_channel/goroutine_1.go">
+    <entry file="file://H:/go/gogopackage/src/github.com/jinzhu/gorm/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="11" column="56" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="11" selection-end-column="56" />
+        <state relative-caret-position="157">
+          <caret line="439" column="13" selection-start-line="439" selection-start-column="13" selection-end-line="439" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/orm.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="63" column="7" lean-forward="true" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          <folding>
+            <element signature="e#14#103#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
