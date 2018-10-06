@@ -13,7 +13,12 @@ import (
 	"time"
 )
 
-func main()  {
+var globalSessions *Manager
+func init() {
+	globalSessions, _ = NewManager("memory", "gosessionid", 3600)
+}
+
+func main() {
 	// 设置访问的路由
 	http.HandleFunc("/", sayhelloName)
 	http.HandleFunc("/login", login)
@@ -38,33 +43,50 @@ func sayhelloName(writer http.ResponseWriter, request *http.Request) {
 	fmt.Println("request.Form[\"url_long\"]:", request.Form["url_long"])
 	fmt.Print("\n")
 
-	for k, v := range  request.Form {
+	for k, v := range request.Form {
 		fmt.Println("key: ", k)
 		fmt.Println("val: ", strings.Join(v, ""))
 	}
+
+	// 设置cookie
+	//expiration := time.Now()
+	//expiration = expiration.AddDate(1, 0, 0)
+	//cookie := http.Cookie{Name: "username", Value: "tomo", Expires: expiration}
+	//http.SetCookie(writer, &cookie)
+
+	// 读取cookie
+	for _, cookie := range request.Cookies() {
+		fmt.Fprintf(writer, cookie.Name+"\n")
+	}
+
 	// 输出到页面的
 	fmt.Fprintf(writer, "hello Tomo")
 	fmt.Print("\n")
 }
 
 func login(w http.ResponseWriter, r *http.Request) {
+	sess := globalSessions.SessionStart(w, r)
 	fmt.Println("method: ", r.Method)
+	r.ParseForm()
 	if r.Method == "GET" {
 		// GET请求页面
-		// Unix将t表示为Unix时间，即从时间点January 1, 1970 UTC到时间点t所经过的时间（单位秒）。
-		crutime := time.Now().Unix()
+		// 1.使用input设置token
+		//// Unix将t表示为Unix时间，即从时间点January 1, 1970 UTC到时间点t所经过的时间（单位秒）。
+		//crutime := time.Now().Unix()
+		//
+		//// 返回一个新的使用MD5校验的hash.Hash接口。
+		//h := md5.New()
+		//// WriteString函数将字符串s的内容写入w中。如果h已经实现了WriteString方法，函数会直接调用该方法。
+		//io.WriteString(h, strconv.FormatInt(crutime, 10))
+		//token := fmt.Sprintf("%x", h.Sum(nil))
 
-		// 返回一个新的使用MD5校验的hash.Hash接口。
-		h := md5.New()
-		// WriteString函数将字符串s的内容写入w中。如果h已经实现了WriteString方法，函数会直接调用该方法。
-		io.WriteString(h, strconv.FormatInt(crutime, 10))
-		token := fmt.Sprintf("%x", h.Sum(nil))
+		// 2.使用session
+		w.Header().Set("Content-type", "text/html")
 
 		t, _ := template.ParseFiles("web/login.gtpl")
-		t.Execute(w, token)
+		t.Execute(w, sess.Get("username"))
 	} else {
 		// 请求的是登陆数据，那么执行登陆的逻辑判断
-		r.ParseForm()
 		token := r.Form.Get("token")
 		if token != "" {
 			// 验证token合法性
@@ -124,7 +146,7 @@ func upload(w http.ResponseWriter, r *http.Request) {
 
 		fmt.Fprintf(w, "%v", handler.Header)
 
-		f, err := os.OpenFile("web/test" + handler.Filename, os.O_WRONLY|os.O_CREATE, 0666)
+		f, err := os.OpenFile("web/test"+handler.Filename, os.O_WRONLY|os.O_CREATE, 0666)
 
 		if err != nil {
 			fmt.Println(err)
