@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/spaolacci/murmur3"
-	"strings"
 	"time"
 )
 
@@ -52,20 +50,20 @@ func main() {
 			catch(err)
 		}
 	}
-	// 插入
-	like := &Like{
-		Ip: "192.168.1.1",
-		Ua: "fucking shit",
-		Title: "fuck off",
-		Hash: murmur3.Sum64([]byte(strings.Join([]string{"192.168.1.1", "fucking shit", "fuck off"}, "-"))) >> 1,
-		CreatedAt: time.Now(),
-	}
+	//// 插入
+	//like := &Like{
+	//	Ip: "192.168.1.1",
+	//	Ua: "fucking shit",
+	//	Title: "fuck off",
+	//	Hash: murmur3.Sum64([]byte(strings.Join([]string{"192.168.1.1", "fucking shit", "fuck off"}, "-"))) >> 1,
+	//	CreatedAt: time.Now(),
+	//}
 	//
 	//if err := db.Create(like).Error; err != nil {
 	//	catch(err)
 	//}
 
-	// 删除
+	//// 删除
 	//if err := db.Where(&Like{Hash: 7285552096162104610}).Delete(Like{}).Error; err != nil {
 	//	catch(err)
 	//}
